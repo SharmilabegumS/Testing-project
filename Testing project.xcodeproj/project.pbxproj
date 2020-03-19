@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97E206FE2423E1F40007F9E4 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E206FD2423E1F40007F9E4 /* Stack.swift */; };
+		97C232C12423EF9E0043EA29 /* ArrayExcercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C232C02423EF9E0043EA29 /* ArrayExcercise.swift */; };
+		97C232C32423F3BF0043EA29 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C232C22423F3BF0043EA29 /* main.swift */; };
+		97C232C52423F6320043EA29 /* DictionaryExcercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C232C42423F6320043EA29 /* DictionaryExcercise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		97C232C02423EF9E0043EA29 /* ArrayExcercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExcercise.swift; sourceTree = "<group>"; };
+		97C232C22423F3BF0043EA29 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		97C232C42423F6320043EA29 /* DictionaryExcercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExcercise.swift; sourceTree = "<group>"; };
 		97E206F12423D9830007F9E4 /* Testing project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Testing project"; sourceTree = BUILT_PRODUCTS_DIR; };
-		97E206FC2423E1F40007F9E4 /* Testing project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Testing project-Bridging-Header.h"; sourceTree = "<group>"; };
-		97E206FD2423E1F40007F9E4 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +61,9 @@
 		97E206F32423D9830007F9E4 /* Testing project */ = {
 			isa = PBXGroup;
 			children = (
-				97E206FD2423E1F40007F9E4 /* Stack.swift */,
-				97E206FC2423E1F40007F9E4 /* Testing project-Bridging-Header.h */,
+				97C232C02423EF9E0043EA29 /* ArrayExcercise.swift */,
+				97C232C22423F3BF0043EA29 /* main.swift */,
+				97C232C42423F6320043EA29 /* DictionaryExcercise.swift */,
 			);
 			path = "Testing project";
 			sourceTree = "<group>";
@@ -123,7 +127,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97E206FE2423E1F40007F9E4 /* Stack.swift in Sources */,
+				97C232C52423F6320043EA29 /* DictionaryExcercise.swift in Sources */,
+				97C232C32423F3BF0043EA29 /* main.swift in Sources */,
+				97C232C12423EF9E0043EA29 /* ArrayExcercise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
