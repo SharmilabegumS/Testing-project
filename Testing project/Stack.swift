@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Stack.swift
 //  Testing project
 //
 //  Created by sharmila-9182 on 19/03/20.
@@ -7,6 +7,3 @@
 //
 
 import Foundation
-
-print("Hello, World!")
-print("Changes")
