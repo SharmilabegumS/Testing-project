@@ -11,13 +11,9 @@ import Foundation
  Pros:
  1. Lookup operations are done in O(1)
  2. Inserting into a dictionary is always O(1).
- 1. Order is maintained
- 2. Constant access time O(1)
  
  Cons:
  1. Order is not maintained
- 2.
- 1. Inserting at the middle / front of the array needs shifting of remaining element after the insertion index. Inserting to the front is the worst case
 */
 
 

@@ -10,6 +10,8 @@
 		97C232C12423EF9E0043EA29 /* ArrayExcercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C232C02423EF9E0043EA29 /* ArrayExcercise.swift */; };
 		97C232C32423F3BF0043EA29 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C232C22423F3BF0043EA29 /* main.swift */; };
 		97C232C52423F6320043EA29 /* DictionaryExcercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C232C42423F6320043EA29 /* DictionaryExcercise.swift */; };
+		97CE3CB82425398B009D8FB5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE3CB72425398B009D8FB5 /* Node.swift */; };
+		97CE3CBB24253F99009D8FB5 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE3CB924253B68009D8FB5 /* LinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,8 @@
 		97C232C02423EF9E0043EA29 /* ArrayExcercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExcercise.swift; sourceTree = "<group>"; };
 		97C232C22423F3BF0043EA29 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		97C232C42423F6320043EA29 /* DictionaryExcercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExcercise.swift; sourceTree = "<group>"; };
+		97CE3CB72425398B009D8FB5 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		97CE3CB924253B68009D8FB5 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		97E206F12423D9830007F9E4 /* Testing project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Testing project"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -64,6 +68,8 @@
 				97C232C02423EF9E0043EA29 /* ArrayExcercise.swift */,
 				97C232C22423F3BF0043EA29 /* main.swift */,
 				97C232C42423F6320043EA29 /* DictionaryExcercise.swift */,
+				97CE3CB72425398B009D8FB5 /* Node.swift */,
+				97CE3CB924253B68009D8FB5 /* LinkedList.swift */,
 			);
 			path = "Testing project";
 			sourceTree = "<group>";
@@ -129,7 +135,9 @@
 			files = (
 				97C232C52423F6320043EA29 /* DictionaryExcercise.swift in Sources */,
 				97C232C32423F3BF0043EA29 /* main.swift in Sources */,
+				97CE3CBB24253F99009D8FB5 /* LinkedList.swift in Sources */,
 				97C232C12423EF9E0043EA29 /* ArrayExcercise.swift in Sources */,
+				97CE3CB82425398B009D8FB5 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
