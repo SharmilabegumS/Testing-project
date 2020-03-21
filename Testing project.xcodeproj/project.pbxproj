@@ -46,6 +46,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		979AEF8424265C2C00D4A2EA /* Data Structure */ = {
+			isa = PBXGroup;
+			children = (
+				97C232C22423F3BF0043EA29 /* main.swift */,
+				979AEF8524265C6600D4A2EA /* Linked list */,
+				97C232C42423F6320043EA29 /* DictionaryExcercise.swift */,
+				97C232C02423EF9E0043EA29 /* ArrayExcercise.swift */,
+			);
+			path = "Data Structure";
+			sourceTree = "<group>";
+		};
+		979AEF8524265C6600D4A2EA /* Linked list */ = {
+			isa = PBXGroup;
+			children = (
+				97CE3CB72425398B009D8FB5 /* Node.swift */,
+				97CE3CB924253B68009D8FB5 /* LinkedList.swift */,
+			);
+			path = "Linked list";
+			sourceTree = "<group>";
+		};
 		97E206E82423D9830007F9E4 = {
 			isa = PBXGroup;
 			children = (
@@ -65,11 +85,7 @@
 		97E206F32423D9830007F9E4 /* Testing project */ = {
 			isa = PBXGroup;
 			children = (
-				97C232C02423EF9E0043EA29 /* ArrayExcercise.swift */,
-				97C232C22423F3BF0043EA29 /* main.swift */,
-				97C232C42423F6320043EA29 /* DictionaryExcercise.swift */,
-				97CE3CB72425398B009D8FB5 /* Node.swift */,
-				97CE3CB924253B68009D8FB5 /* LinkedList.swift */,
+				979AEF8424265C2C00D4A2EA /* Data Structure */,
 			);
 			path = "Testing project";
 			sourceTree = "<group>";
