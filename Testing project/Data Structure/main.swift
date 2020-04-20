@@ -109,3 +109,56 @@ print("Array containing last 3 elements: \(Array(list.suffix(3)))")
 let sum = list.reduce(0, +)
 print("Sum of all values: \(sum)")
 
+var stack = Stack<Int>()
+stack.push(1)
+stack.push(2)
+stack.push(5)
+print("Initial Stack contents: ", stack)
+print("Popped out element: ", stack.pop())
+stack.push(3)
+print("New Stack contents: ", stack)
+
+var queue = Queue<String>()
+queue.enqueue("Ada")
+queue.enqueue("Steve")
+queue.enqueue("Tim")
+
+var q = EfficientQueue<String>()
+print("Empty Queue: ",q.array)                   // [] empty array
+
+q.enqueue("Ada")
+q.enqueue("Steve")
+q.enqueue("Tim")
+print("Queue 1: ",q.array)          // [{Some "Ada"}, {Some "Steve"}, {Some "Tim"}]
+print("Queue 1 count: ",q.count)             // 3
+
+print("Dequeued element 1: ",q.dequeue())         // "Ada"
+print("List 2: ",q.array)            // [nil, {Some "Steve"}, {Some "Tim"}]
+print("Queue 2 count: ", q.count)             // 2
+
+print("Dequeued element 2: ",q.dequeue())         // "Steve"
+print("List 3: ",q.array)            // [nil, nil, {Some "Tim"}]
+print("Queue 3 count: ",q.count)             // 1
+
+q.enqueue("Grace")
+print("List 4: ",q.array)             // [nil, nil, {Some "Tim"}, {Some "Grace"}]
+print("Queue 4 count: ",q.count)
+
+let list1 = [ 10, -1, 3, 9, 2, 27, 8, 5, 1, 3, 0, 26 ]
+print("insertionSort1 sorted number: \(insertionSort1(list1))")
+
+let list2 = [ 10, -1, 3, 9, 2, 27, 8, 5, 1, 3, 0, 26 ]
+print("insertionSort2 sorted number: \(insertionSort2(list2))")
+
+
+let numbers = [ 10, -1, 3, 9, 2, 27, 8, 5, 1, 3, 0, 26 ]
+print("descendingly sorted number: \(insertionSort3(numbers, <))")
+print("descendingly sorted number: \(insertionSort3(numbers, >))")
+
+let strings = [ "b", "a", "d", "c", "e" ]
+print("descendingly sorted literals: \(insertionSort3(strings, <))")
+
+
+let searchNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67]
+
+print("Position is: \(binarySearch(searchNumbers, key: 45, range: 0 ..< searchNumbers.count))")
