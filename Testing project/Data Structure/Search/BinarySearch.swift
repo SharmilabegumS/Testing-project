@@ -9,7 +9,7 @@
 import Foundation
 
 func binarySearch<T: Comparable>(_ a: [T], key: T, range: Range<Int>) -> Int? {
-    if range.lowerBound >= range.upperBound {
+    if range.lowerBound == range.upperBound {
         // If we get here, then the search key is not present in the array.
         return nil
 

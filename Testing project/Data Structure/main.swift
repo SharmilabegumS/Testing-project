@@ -162,3 +162,93 @@ print("descendingly sorted literals: \(insertionSort3(strings, <))")
 let searchNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67]
 
 print("Position is: \(binarySearch(searchNumbers, key: 45, range: 0 ..< searchNumbers.count))")
+
+
+// General Tree example
+let tree = TreeNode<String>(value: "beverages")
+
+let hotNode = TreeNode<String>(value: "hot")
+let coldNode = TreeNode<String>(value: "cold")
+
+let teaNode = TreeNode<String>(value: "tea")
+let coffeeNode = TreeNode<String>(value: "coffee")
+let chocolateNode = TreeNode<String>(value: "cocoa")
+
+let blackTeaNode = TreeNode<String>(value: "black")
+let greenTeaNode = TreeNode<String>(value: "green")
+let chaiTeaNode = TreeNode<String>(value: "chai")
+
+let sodaNode = TreeNode<String>(value: "soda")
+let milkNode = TreeNode<String>(value: "milk")
+
+let gingerAleNode = TreeNode<String>(value: "ginger ale")
+let bitterLemonNode = TreeNode<String>(value: "bitter lemon")
+
+tree.addChild(hotNode)
+tree.addChild(coldNode)
+
+hotNode.addChild(teaNode)
+hotNode.addChild(coffeeNode)
+hotNode.addChild(chocolateNode)
+
+coldNode.addChild(sodaNode)
+coldNode.addChild(milkNode)
+
+teaNode.addChild(blackTeaNode)
+teaNode.addChild(greenTeaNode)
+teaNode.addChild(chaiTeaNode)
+
+sodaNode.addChild(gingerAleNode)
+sodaNode.addChild(bitterLemonNode)
+
+print(tree.description)
+
+// BST:
+print("-------- Binary Search Tree Operations ---------")
+let binarySearchTree = BinarySearchTree<Int>(array: [7, 2, 5, 10, 9, 1])
+
+print("Search for 5: \(String(describing: binarySearchTree.searchThroughLoop(5)))")
+print("Search for 2: \(String(describing: binarySearchTree.searchThroughLoop(2)))")
+print("Search for 7: \(String(describing: binarySearchTree.searchThroughLoop(7)))")
+print("Search for 6: \(String(describing: binarySearchTree.searchThroughLoop(6)))")
+
+print("Inorder traversal result")
+binarySearchTree.traverseInOrder { value in print(value) }
+
+print("Tree elements in array form: \(binarySearchTree.toArray())")
+
+print("Height: \(binarySearchTree.height())")
+
+if let node9 = binarySearchTree.searchThroughLoop(9) {
+    print("Depth of 9: \(node9.depth())")  // returns 2
+}
+
+if let node1 = binarySearchTree.searchThroughLoop(1) {
+    print("BST validation before wrong insertion: \(binarySearchTree.isBST(minValue: Int.min, maxValue: Int.max))") // true
+    node1.insert(value: 100)                                 // EVIL!!!
+    print("Missing wrongly inserted element on search: \(String(describing: binarySearchTree.searchThroughLoop(100)))")                                 // nil
+    print("BST validation before wrong insertion: \(binarySearchTree.isBST(minValue: Int.min, maxValue: Int.max))")  // false
+}
+
+print("-------- Binary Search Tree enum Operations ---------")
+var bstEnum = BinarySearchTreeEnum.Leaf(7)
+bstEnum = bstEnum.insert(newValue: 2)
+bstEnum = bstEnum.insert(newValue: 5)
+bstEnum = bstEnum.insert(newValue: 10)
+bstEnum = bstEnum.insert(newValue: 9)
+bstEnum = bstEnum.insert(newValue: 1)
+
+print("Search for 6: \(String(describing: bstEnum.search(x: 10)))")
+print("Search for 6: \(String(describing: bstEnum.search(x: 1)))")
+print("Search for 6: \(String(describing: bstEnum.search(x: 11)))")
+
+print("Enum based BST: \(bstEnum))")
+
+// Merge sort
+print("---------- Merge sort impementations ---------")
+
+let toPerformMergeSortArray = [2, 1, 5, 4, 9]
+let mergeSortPerfromedArrayTopToBottom = mergeSort(toPerformMergeSortArray)
+let mergeSortPerfromedArrayBottomUp = mergeSortBottomUp(toPerformMergeSortArray, <)
+print("Merge sorted array TopToBottom: ", mergeSortPerfromedArrayTopToBottom)
+print("Merge sorted array BottomUp: ", mergeSortPerfromedArrayBottomUp)
