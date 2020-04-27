@@ -252,3 +252,11 @@ let mergeSortPerfromedArrayTopToBottom = mergeSort(toPerformMergeSortArray)
 let mergeSortPerfromedArrayBottomUp = mergeSortBottomUp(toPerformMergeSortArray, <)
 print("Merge sorted array TopToBottom: ", mergeSortPerfromedArrayTopToBottom)
 print("Merge sorted array BottomUp: ", mergeSortPerfromedArrayBottomUp)
+
+
+
+print("------ String search -------")
+let sourceString = "Hello, World"
+let searchPattern = "World"
+print("Found at: ", sourceString.index(of: searchPattern))
+print("Found at BMH: ", sourceString.indexBMH(of: searchPattern))
